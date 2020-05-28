@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+
+/* CSS Document */
+@import url("0513menu.css");
+
+
+/*basic settings*/
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	background:#000000; /*black*/
+}
+
+::-moz-selection{ /*firefox*/
+	color:#f50002;
+	background: #fff;
+}
+
+::selection{
+	color:#f50002;
+	background: #fff;
+}
+
+
+/*header*/
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	min-width:980px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,1);
+	z-index:1000;
+}
+
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+span {
+	position:absolute;
+	top:1%;
+	left:1%;
+	font-size:35px;
+	font-weight:bold;
+	color:#f50002
+}
+
+
+/*banner*/
+.banner{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	background:url(../images/banner.jpg)no-repeat;
+	background-size:100%;
+	margin-bottom:0;
+}
+
+
+
+/*anitext*/  /*設定動畫的撥放方式*/
+
+.anitext a{
+	position:absolute;
+	padding:10px;
+	left:25%;
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	opacity:;
+	background:#000000;
+	
+	animation-name: ant;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-direction:normal;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-name: ant;  /*動畫名稱*/
+	-webkit-animation-duration: 3s;  /*動畫時間3秒*/
+	-webkit-animation-iteration-count: 1; /*播放次數1次*/
+	-webkit-animation-timing-function: ease; /*動態方式漸慢開始與結束*/
+	-webkit-animation-delay: 1s; /*1秒後播放*/
+	-webkit-animation-direction:normal; /*動畫播放順序為順向*/
+	-webkit-animation-fill-mode: forwards; /*動畫結束後停格於最後一格 需搭配direction*/
+
+}
+
+.anitext a:hover{
+	color:#f50002;
+}
+	
+	
+
+@keyframes ant{ /*動畫動的方式*/
+	from{
+		top:80%;
+		opacity:0;
+		background:none;
+		text-decoration:none;
+	}
+	to{
+		top:10%;
+		opacity:1;
+		padding:50px;
+		background:none;
+		text-decoration:none;
+	}
+}
+
+
+
+/*footer*/
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;
+	font-size:5px;
+	color:#C0C0C0;
+	margin:0;
+	background: rgba(0,0,0,1);
+		
+}
+

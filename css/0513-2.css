@@ -1,0 +1,154 @@
+@charset "utf-8";
+@import url("0513menu.css");
+
+
+/* CSS Document */
+
+
+
+/*basic settings*/
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	background:#FFFF; /*White*/
+}
+
+::-moz-selection{ /*firefox*/
+	color:#f50002;
+	background: #fff;
+}
+
+::selection{
+	color:#f50002;
+	background: #fff;
+}
+
+
+/*header*/
+
+
+span a{
+	position:absolute;
+	top:1%;
+	left:1%;
+	font-size:35px;
+	font-weight:bold;
+	color:#f50002;
+	text-decoration:none;
+}
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	min-width:980px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,1);
+	z-index:1000;
+}
+
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+
+
+/*section*/
+section{
+	width:80%;
+	margin:auto;
+	margin-top:80px;
+	-webkit-column-count: 3; /*chrome, safari, opera*/
+	-moz-column-count: 3;  /*firefox*/
+	column-count: 3;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px; /*firefox*/
+	column-gap: 20px;
+}
+
+
+
+.box{
+	display: inline-block;
+	box-sizing:border-box;
+	width:100%;
+	color:#000000;
+	background:#fff;
+	margin:12px 0px 0px; /*上12 左右0 下0*/
+	overflow:hidden;
+	z-index:10;
+	box-shadow: 2px 2px 8px #999;
+	border-radius: 10px;
+}
+	
+.imgbox{
+	width:100%;
+	overflow:hidden;
+}
+
+.box img{
+	width:100%;
+	overflow:hidden;
+}
+
+.box:hover{
+	cursor:pointer;
+	background:#000000;
+	color:#fff;
+}
+
+
+.box .imgbox img{
+	transform: scale(1,1); /*原始比例*/
+	transition: transform 1.5s; /*放大的速度*/
+	transition-timing-function: ease-in-out;
+	
+	-ms-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	-webkit-transition: transform 1.5s;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.box:hover .imgbox img{
+	-ms-transform: scale(1.2,1.2); /*變大的倍數*/
+	-webkit-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+	background:#000000;
+}
+
+.box h3{
+    box-sizing:border-box;
+    padding:0px 20px;  /*上下0左右20*/
+}
+
+.box p{
+    box-sizing:border-box;
+    padding:0px 20px;  /*上下0左右20*/    
+}
+  
+.box a{
+	color:#000000;
+	text-decoration:none;
+}
+
+.box a:hover{
+	color:#fff;
+	background:#000000;
+}
+
+
+/*footer*/
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;
+	font-size:5px;
+	color:#C0C0C0;	
+}
+

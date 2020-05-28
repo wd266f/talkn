@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* CSS Document */
+@import url("0513menu.css");
+
+/*basic settings*/
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體",'Black Han Sans';
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	background:#FFFF; /*White*/
+}
+
+::-moz-selection{ /*firefox*/
+	color:#f50002;
+	background: #fff;
+}
+
+::selection{
+	color:#f50002;
+	background: #fff;
+}
+
+/*header*/
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	min-width:980px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,1);
+	z-index:1000;
+}
+
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+span a{
+	position:absolute;
+	top:1%;
+	left:1%;
+	font-size:35px;
+	font-weight:bold;
+	color:#f50002;
+	text-decoration:none;
+}
+
+
+
+/* aside */
+aside{
+	clear:both;
+	width:80%;
+	margin:10%;
+}
+
+.wraptext{
+	float:left;
+	width:100%;
+	box-sizing:border-box;
+	padding:10px;
+	background:#fff;
+	border-bottom:solid 2px #000000;
+	color:#636363;
+}
+
+.wraptext p{
+	padding:0;
+	margin:10;
+	line-height:1.5em;
+}
+
+.wraptext img{
+	float:left;
+	position:relative;
+	padding-right:20px;
+	width:33.33%;
+}
+
+.desbox h2{
+	color:#000000;
+	line-height:1.5em;
+}
+
+.wraptext a{
+	float:right;	
+	color:#C0C0C0;
+	text-decoration:none;
+}
+
+.wraptext a:hover{
+	color:#f50002;
+}
+
+.wraptext a:active{
+	color:#000000;
+}
+
+
+/*footer*/
+
+footer{
+	clear:both;
+	padding:50px;
+	border-top:solid 50px #fff;
+	text-align:center;
+	font-size:5px;
+	color:#C0C0C0;
+	margin:0;
+	background: rgba(0,0,0,1);	
+}
+

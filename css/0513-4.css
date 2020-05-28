@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("0513menu.css");
+
+/*basic settings*/
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體",'Black Han Sans';
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	background:#FFFF; /*White*/
+}
+
+::-moz-selection{ /*firefox*/
+	color:#f50002;
+	background: #fff;
+}
+
+::selection{
+	color:#f50002;
+	background: #fff;
+}
+
+/*header*/
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	min-width:980px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,1);
+	z-index:1000;
+}
+
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+span a{
+	position:absolute;
+	top:1%;
+	left:1%;
+	font-size:35px;
+	font-weight:bold;
+	color:#f50002;
+	text-decoration:none;
+}
+
+/*section*/
+section{
+	position:relative;
+	width:60%;
+	height:500px;
+	overflow: hidden;
+	margin:100px auto 0px;
+	}
+section h4{
+	color:#f50002;
+}
+section p{
+	font-size:30px;
+	margin-bottom:5px;
+}
+
+.right{
+	width:100%;
+	position:absolute;
+	box-sizing:border-box;
+	margin-top:10px;
+}
+
+section .left small{
+	color:#636363;
+	margin-top:10px;
+}
+
+/*article*/
+article{
+	width:60%;
+	padding:0;
+	margin:auto;
+	margin-top:5px;
+}
+
+.content img{
+	float:left;
+	position:relative;
+	margin:10px;
+	margin-bottom:30px;
+}
+
+
+
+/*aside*/
+aside{
+	width:60%;
+	padding:0;
+	margin:auto;
+	margin-top:50px;
+	position:relative;
+}
+
+aside a{
+	float:right;
+	color:#636363;
+	text-align:right;
+}
+
+aside a:hover{
+	color:#f50002;
+}
+
+
+/*footer*/
+
+footer{
+	clear:both;
+	padding:50px;
+	border-top:solid 50px #fff;
+	text-align:center;
+	font-size:5px;
+	color:#C0C0C0;
+	margin:0;
+	background: rgba(0,0,0,1);	
+}
+
